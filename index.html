@@ -4,33 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruchard's Farm</title>
-    <!-- Use a pixel font to simulate Stardew Valley style -->
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>李家豐 - NEON CITY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Orbitron:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main class="container">
-        <div class="wood-board menu-panel">
-            <h1 class="greeting">Ruchard's Farm</h1>
-            <p class="subtitle">Level 10 Web Farmer</p>
+    <div class="cyber-grid"></div>
 
-            <div class="time-widget wood-board inner-panel">
-                <div class="clock" id="clock">00:00:00</div>
+    <main class="container">
+        <div class="cyber-panel">
+            <h1 class="greeting glitch" data-text="李家豐">李家豐</h1>
+            <p class="subtitle cyber-text_color">SYSTEM.ADMIN <span>// ONLINE</span></p>
+
+            <div class="time-widget">
+                <div class="glitch-wrapper">
+                    <div class="clock cyber-glitch" id="clock">00:00:00</div>
+                </div>
+                <!-- The script uses getElementById('date') to update -->
                 <div class="date" id="date">Day, Month DD, Year</div>
             </div>
 
-            <div class="inventory">
-                <button class="pixel-btn">Talk</button>
-                <button class="pixel-btn">Gifts</button>
+            <div class="actions">
+                <button class="cyber-btn">
+                    ACCESS DATABANK
+                </button>
             </div>
 
-            <!-- Stardew style decorative elements -->
-            <div class="corner top-left"></div>
-            <div class="corner top-right"></div>
-            <div class="corner bottom-left"></div>
-            <div class="corner bottom-right"></div>
+            <!-- decorative elements -->
+            <div class="scanner"></div>
         </div>
     </main>
 
