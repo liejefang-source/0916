@@ -4,62 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>李家豐 - NEON CITY</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Orbitron:wght@700&display=swap"
+    <title>李家豐 - VOGUE EDITORIAL</title>
+    <!-- Bodoni Moda for elegant headlines, Lato for clean body text -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400&family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="cyber-grid"></div>
+    <header class="masthead">
+        <h1 class="logo">VOGUE</h1>
+        <p class="issue-date">THE TECHNOLOGY ISSUE &middot; 李家豐</p>
+    </header>
 
-    <main class="container">
-        <div class="cyber-panel">
-            <h1 class="greeting glitch" data-text="李家豐">李家豐</h1>
-            <p class="subtitle cyber-text_color">中興電機工程研究所 <span>// 學生</span></p>
+    <main class="magazine-grid">
+        <!-- Main Feature / Cover Text -->
+        <article class="feature">
+            <h2 class="headline">THE<br>INNOVATOR</h2>
+            <h3 class="subheadline">An Exclusive Look at NCHU's Rising Talent</h3>
 
-            <div class="info-grid">
-                <div class="cyber-block">
-                    <p class="block-title">>> SYSTEM_ID</p>
-                    <p>NID: <span class="highlight">7115064167</span></p>
-                    <p>STATUS: <span class="highlight">ACTIVE</span></p>
-                </div>
-
-                <div class="cyber-block">
-                    <p class="block-title">>> SKILL_TREE</p>
-                    <div class="tags">
-                        <span class="cyber-tag">Python</span>
-                        <span class="cyber-tag">C</span>
-                        <span class="cyber-tag">C++</span>
-                        <span class="cyber-tag">Web Dev</span>
-                    </div>
-                </div>
+            <div class="editorial-text">
+                <p>NID: <strong>7115064167</strong></p>
+                <p>AFFILIATION: <strong>中興大學電機工程研究所</strong></p>
+                <p>STATUS: <strong>GRADUATE PROGRAM</strong></p>
             </div>
 
-            <div class="cyber-block projects-block">
-                <p class="block-title">>> DATABANK: UNIV_PROJECTS</p>
-                <ul class="cyber-list">
-                    <li>> 以影像辨識為基礎之電池分類回收系統</li>
-                </ul>
+            <hr class="divider">
+
+            <div class="technical-expertise">
+                <h4 class="section-title">THE EXPERTISE</h4>
+                <p class="skills-list">PYTHON &middot; C &middot; C++ &middot; WEB DEVELOPMENT</p>
             </div>
 
-            <div class="time-widget">
-                <div class="glitch-wrapper">
-                    <div class="clock cyber-glitch" id="clock">00:00:00</div>
-                </div>
-                <!-- The script uses getElementById('date') to update -->
+            <hr class="divider">
+
+            <div class="featured-project">
+                <h4 class="section-title">FEATURED RESEARCH</h4>
+                <h5 class="project-name">以影像辨識為基礎之電池分類回收系統</h5>
+                <p class="project-desc">A groundbreaking approach combining computer vision and environmental
+                    sustainability, changing the landscape of battery recycling.</p>
+            </div>
+        </article>
+
+        <!-- Sidebar / Time / Actions -->
+        <aside class="sidebar">
+            <div class="time-editorial">
+                <p class="time-label">CURRENT LOCAL TIME</p>
+                <div class="clock" id="clock">00:00:00</div>
                 <div class="date" id="date">Day, Month DD, Year</div>
             </div>
 
-            <div class="actions">
-                <button class="cyber-btn">
-                    ACCESS DATABANK
-                </button>
+            <div class="call-to-action">
+                <a href="#" class="vogue-btn">READ THE FEATURE</a>
             </div>
 
-            <!-- decorative elements -->
-            <div class="scanner"></div>
-        </div>
+            <!-- Abstract editorial placeholder -->
+            <div class="image-placeholder">
+                <p>PORTRAIT<br>NO. 1</p>
+            </div>
+        </aside>
     </main>
 
     <script src="script.js"></script>
