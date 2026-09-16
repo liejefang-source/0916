@@ -119,6 +119,28 @@ body {
     animation: blink 1s infinite alternate;
 }
 
+/* ID Card */
+.id-card {
+    background: rgba(0, 243, 255, 0.05);
+    border-left: 3px solid var(--cyber-cyan);
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.id-card p {
+    margin: 5px 0;
+    color: var(--text-main);
+}
+
+.id-card .highlight {
+    color: var(--cyber-yellow);
+    font-family: 'Orbitron', sans-serif;
+}
+
 @keyframes blink {
     0% {
         opacity: 1;
